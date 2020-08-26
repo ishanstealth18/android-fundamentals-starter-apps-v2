@@ -53,6 +53,35 @@ public class CalculatorTest {
         assertThat(resultAdd, is(equalTo(2d)));
     }
 
+    @Test
+    public void addTwoNumbersNegative(){
+        double negativeSum = mCalculator.add(-1d,-3d);
+        assertThat(negativeSum, is(equalTo(-4d)));
+    }
+
+    @Test
+    public void powFunctionPositive()
+    {
+        double powerResult = mCalculator.pow(2d,3d);
+        assertThat(powerResult, is(equalTo(8d)));
+    }
+
+    @Test
+    public void powFunctionNegative()
+    {
+        double powerResultNegative = mCalculator.pow(-2d,3d);
+        assertThat(powerResultNegative, is(equalTo(-8d)));
+    }
+
+    @Test
+    public void powFunctionZero()
+    {
+        double powerResultZero = mCalculator.pow(0d,3d);
+        assertThat(powerResultZero, is(equalTo(1d)));
+    }
+
+
+
 
 
 }

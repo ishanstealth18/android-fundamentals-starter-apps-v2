@@ -77,6 +77,14 @@
             android:onClick="onMul"
             android:text="@string/mul_operation_text"/>
 
+        <Button
+            android:id="@+id/power_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/operation_sub_btn"
+            android:onClick="onPow"
+            android:text="@string/pow" />
+
     </RelativeLayout>
 
     <TextView
@@ -84,5 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+
 
 </LinearLayout>
